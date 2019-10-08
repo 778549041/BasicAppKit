@@ -1,0 +1,25 @@
+platform:ios, ‘9.0’
+
+target ‘BasicAppKit’ do
+
+pod 'AFNetworking'  #网络请求
+pod 'Masonry'       #布局
+pod 'SDWebImage' ,'~> 4.0'  #加载网络图片
+pod 'IQKeyboardManager', '~> 6.4.0' #键盘管理工具
+pod 'JSONModel' #模型
+pod 'MJExtension', '~> 3.0'
+pod 'CYLTabBarController'   #基础Tabbar
+pod 'MBProgressHUD' #加载工具
+pod 'SVProgressHUD'
+pod 'DZNEmptyDataSet' #空数据显示
+pod 'SDCycleScrollView','~> 1.73' #自动滚动横幅  banner
+pod 'MJRefresh', '~> 3.1.15' #上下拉刷新
+pod 'WZLBadge', '~> 1.2.6'#消息提示
+pod 'HMSegmentedControl' #滑动tab
+pod 'KLCPopup' #视图弹层
+pod 'FDFullscreenPopGesture' #侧滑返回
+pod 'UITableView+FDTemplateLayoutCell' #自动计算行高
+pod 'TZImagePickerController' #非常好用的图片，视频选择器,也可用于展示
+pod 'PYSearch' #漂亮的搜索
+
+end

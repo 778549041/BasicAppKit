@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  BasicAppKit
+//
+//  Created by xujun on 2019/8/9.
+//  Copyright © 2019 xujun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Macros.h"
+#import "MBProgressHUD+MJ.h"
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+#import "AFNRequestManager.h"
+#import <WZLBadgeImport.h>
+#import <MJRefresh.h>
+#import <UINavigationController+FDFullscreenPopGesture.h>
+
+#endif /* PrefixHeader_pch */
