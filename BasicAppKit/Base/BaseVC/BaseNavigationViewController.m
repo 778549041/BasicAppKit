@@ -24,8 +24,8 @@
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         backButton.frame = CGRectMake(0, 0, 60, 40);
         [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-        [backButton setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
-        [backButton setTitleColor:[UIColor clearColor] forState:UIControlStateHighlighted];
+        [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
         [backButton setTitle:@"返回" forState:UIControlStateNormal];
         [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         // 注意:一定要在按钮内容有尺寸的时候,设置才有效果
