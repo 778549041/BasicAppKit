@@ -10,6 +10,7 @@
 #import "UIImage+GIFImage.h"
 #import <AVFoundation/AVFoundation.h>
 #import <sys/utsname.h>
+#import "HVideoViewController.h"
 
 @implementation CommonUtil
 
@@ -184,7 +185,7 @@ DEF_SINGLETON(CommonUtil)
             
         }
     };
-    [[ApiHandler currentViewController] presentViewController:vc animated:YES completion:nil];
+    [[UIViewController currentViewController] presentViewController:vc animated:YES completion:nil];
 #endif
 }
 

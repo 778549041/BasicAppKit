@@ -15,7 +15,7 @@
 @implementation BaseViewController
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent; //白色
+    return UIStatusBarStyleDefault;
 }
 
 - (void)viewDidLoad {
