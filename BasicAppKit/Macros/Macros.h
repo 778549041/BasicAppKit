@@ -84,7 +84,6 @@ _Pragma("clang diagnostic pop") \
 
 //Library/Caches 文件路径
 #define FilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
-
 //获取temp
 #define kPathTemp NSTemporaryDirectory()
 //获取沙盒 Document
@@ -112,8 +111,3 @@ dispatch_once(&once, ^{ __singleton__ = [[__class alloc] init]; } ); \
 return __singleton__; \
 }
 
-#ifdef DEBUG
-#define NSLog(format, ...) printf("[%s] %s [第%d行] %s", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
-#else
-#define NSLog(format, ...)
-#endif

@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MainTabbarViewController.h"
-#import "ShareSDKHelper.h"
 
 @interface AppDelegate ()
 
@@ -18,14 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    MainTabbarViewController *tabvc = [[MainTabbarViewController alloc] init];
-    self.window.rootViewController = tabvc;
-    
-    [ShareSDKHelper initShareSDK];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

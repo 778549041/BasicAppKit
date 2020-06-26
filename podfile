@@ -6,7 +6,7 @@ pod 'AFNetworking'  #网络请求
 pod 'Masonry'       #布局
 pod 'SDWebImage' ,'~> 4.0'  #加载网络图片
 pod 'IQKeyboardManager', '~> 6.4.0' #键盘管理工具
-pod 'JSONModel' #数据模型解析
+pod 'JSONModel' #模型
 pod 'MJExtension', '~> 3.0'
 pod 'CYLTabBarController'   #基础Tabbar
 pod 'MBProgressHUD' #加载工具
@@ -21,15 +21,5 @@ pod 'FDFullscreenPopGesture' #侧滑返回
 pod 'UITableView+FDTemplateLayoutCell' #自动计算行高
 pod 'TZImagePickerController' #非常好用的图片，视频选择器,也可用于展示
 pod 'PYSearch' #漂亮的搜索
-# 分享 ShareSDK 
-# 主模块(必须)
-pod 'mob_sharesdk'
-# UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
-pod 'mob_sharesdk/ShareSDKUI'
-# 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
-pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
-pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
-pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
-# pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
 
 end

@@ -18,6 +18,4 @@
 #import <MJRefresh.h>
 #import <UINavigationController+FDFullscreenPopGesture.h>
 
-#import "UIViewController+Action.h"
-
 #endif /* PrefixHeader_pch */

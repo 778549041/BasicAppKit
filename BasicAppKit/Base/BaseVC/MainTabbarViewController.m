@@ -7,9 +7,7 @@
 //
 
 #import "MainTabbarViewController.h"
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
+#import "ViewController.h"
 #import "BaseNavigationViewController.h"
 
 @interface MainTabbarViewController ()
@@ -31,31 +29,31 @@
     self.tabBarItemsAttributes = [self tabBarItemsAttributesForController];
     /// 设置控制器数组
     self.viewControllers =[self mpViewControllers];
-    self.moreNavigationController.navigationBarHidden = NO;
+    self.moreNavigationController.navigationBarHidden = YES;
     //加这两行代码，以免被系统渲染成蓝色
     self.tabBar.tintColor = [UIColor redColor];
     self.tabBar.barTintColor = [UIColor whiteColor];
     //去掉顶部黑线
-//    self.tabBar.clipsToBounds = YES;
-//    self.tabBar.backgroundColor = [UIColor clearColor];
-//    [self.tabBar setBackgroundImage:[UIImage new]];
-//    [self.tabBar setShadowImage:[UIImage new]];
+    self.tabBar.clipsToBounds = YES;
+    self.tabBar.backgroundColor = [UIColor clearColor];
+    [self.tabBar setBackgroundImage:[UIImage new]];
+    [self.tabBar setShadowImage:[UIImage new]];
 }
 
 
 //控制器设置
 - (NSArray *)mpViewControllers {
     
-    FirstViewController *firstViewController = [[FirstViewController alloc] init];
+    ViewController *firstViewController = [[ViewController alloc] init];
     firstViewController.title = @"首页";
     UINavigationController *firstNavigationController = [[BaseNavigationViewController alloc] initWithRootViewController:firstViewController];
     
     
-    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    ViewController *secondViewController = [[ViewController alloc] init];
     secondViewController.title = @"我的账户";
     UINavigationController *secondNavigationController = [[BaseNavigationViewController alloc]initWithRootViewController:secondViewController];
     
-    ThirdViewController *thirdViewController = [[ThirdViewController alloc] init];
+    ViewController *thirdViewController = [[ViewController alloc] init];
     thirdViewController.title = @"我的";
     UINavigationController *thirdNavigationController = [[BaseNavigationViewController alloc] initWithRootViewController:thirdViewController];
     
@@ -71,18 +69,18 @@
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"首页",
-                                                 CYLTabBarItemImage : @"icon_category",
-                                                 CYLTabBarItemSelectedImage : @"icon_category_selected",
+                                                 CYLTabBarItemImage : @"tab_icon1_nor",
+                                                 CYLTabBarItemSelectedImage : @"tab_icon1_sel",
                                                  };
     NSDictionary *thirdTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : @"账户",
-                                                 CYLTabBarItemImage : @"icon_home",
-                                                 CYLTabBarItemSelectedImage : @"icon_home_selected",
+                                                 CYLTabBarItemImage : @"tab_icon2_nor",
+                                                 CYLTabBarItemSelectedImage : @"tab_icon2_sel",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{
                                                   CYLTabBarItemTitle : @"我的",
-                                                  CYLTabBarItemImage : @"icon_me",
-                                                  CYLTabBarItemSelectedImage : @"icon_me_selected"
+                                                  CYLTabBarItemImage : @"tab_icon3_nor",
+                                                  CYLTabBarItemSelectedImage : @"tab_icon3_sel"
                                                   };
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
