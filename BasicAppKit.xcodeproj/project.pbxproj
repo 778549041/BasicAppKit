@@ -1317,7 +1317,7 @@
 					"$(PROJECT_DIR)/BasicAppKit/Third/ShareSDK/Support/PlatformConnector",
 					"$(PROJECT_DIR)/BasicAppKit/Third/ShareSDK",
 				);
-				GCC_PREFIX_HEADER = /Users/xujun/Desktop/BasicAppKit/BasicAppKit/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicAppKit/PrefixHeader.pch";
 				INFOPLIST_FILE = BasicAppKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1356,7 +1356,7 @@
 					"$(PROJECT_DIR)/BasicAppKit/Third/ShareSDK/Support/PlatformConnector",
 					"$(PROJECT_DIR)/BasicAppKit/Third/ShareSDK",
 				);
-				GCC_PREFIX_HEADER = /Users/xujun/Desktop/BasicAppKit/BasicAppKit/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BasicAppKit/PrefixHeader.pch";
 				INFOPLIST_FILE = BasicAppKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

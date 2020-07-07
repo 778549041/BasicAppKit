@@ -17,6 +17,7 @@ PODS:
   - CYLTabBarController (1.17.22)
   - DZNEmptyDataSet (1.8.1)
   - FDFullscreenPopGesture (1.1)
+  - FLAnimatedImage (1.0.12)
   - HMSegmentedControl (1.5.5)
   - IQKeyboardManager (6.4.0)
   - JSONModel (1.8.0)
@@ -35,6 +36,8 @@ PODS:
   - TZImagePickerController (3.2.2)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - WZLBadge (1.2.6)
+  - XHLaunchAd (3.9.12):
+    - FLAnimatedImage (~> 1.0.12)
 
 DEPENDENCIES:
   - AFNetworking
@@ -56,6 +59,7 @@ DEPENDENCIES:
   - TZImagePickerController
   - "UITableView+FDTemplateLayoutCell"
   - WZLBadge (~> 1.2.6)
+  - XHLaunchAd
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -77,14 +81,17 @@ SPEC REPOS:
     - "UITableView+FDTemplateLayoutCell"
     - WZLBadge
   trunk:
+    - FLAnimatedImage
     - IQKeyboardManager
     - TZImagePickerController
+    - XHLaunchAd
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
@@ -100,7 +107,8 @@ SPEC CHECKSUMS:
   TZImagePickerController: 44aa49cf35b1e88fe292be955e15b9003a5b1d83
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
+  XHLaunchAd: 6320f9c68732667323072fc3a5f104e40fbe9cfe
 
-PODFILE CHECKSUM: 93f37fd9e53d61621282ede4dd623cf3c2a17bd9
+PODFILE CHECKSUM: 4d90b6faabf1b4671de40af733def1e395eda365
 
-COCOAPODS: 1.8.0.beta.1
+COCOAPODS: 1.9.1
